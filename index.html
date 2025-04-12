@@ -2,84 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BirdBurn Token</title>
-  <link rel="icon" href="birdburn.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      background: #fefefe;
-      color: #333;
-      text-align: center;
-      padding: 2em;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
-
-    .container {
-      max-width: 600px;
-      margin: auto;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      padding: 2em;
-      background: white;
-    }
-
-    img.logo {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 1em;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
-    }
-
-    p {
-      line-height: 1.6em;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 1.5em;
-      padding: 0.75em 1.5em;
-      background: #ff9900;
+    header {
+      background-color: #111827;
       color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+      padding: 2rem;
+      width: 100%;
+      text-align: center;
     }
-
-    a.button:hover {
-      background: #ff6600;
+    header img {
+      height: 80px;
+      margin-bottom: 1rem;
     }
-
-    .info {
-      margin-top: 2em;
+    main {
+      padding: 2rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+    }
+    h1 { font-size: 2.5rem; margin: 0.5rem 0; }
+    h2 { font-size: 1.2rem; color: #6b7280; margin-top: 0; }
+    ul {
       text-align: left;
+      margin-top: 1rem;
+      padding-left: 1.2rem;
     }
-
-    .info strong {
-      display: inline-block;
-      width: 120px;
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: auto;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #9ca3af;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="birdburn.png" alt="BirdBurn Logo" class="logo"/>
-    <h1>BirdBurn (BBURN)</h1>
-    <p>The deflationary token on TON blockchain that burns 4% of every transfer.</p>
-
-    <div class="info">
-      <p><strong>Total Supply:</strong> 1,000,000 BBURN</p>
-      <p><strong>Decimals:</strong> 9</p>
-      <p><strong>Blockchain:</strong> TON</p>
-      <p><strong>Jetton Address:</strong> <br/> <code>EQD55i6gJhCoVEWGeN0x_xB-0cW7zxMsRqItYBTBhlTY1djj</code></p>
+  <header>
+    <img src="https://gateway.pinata.cloud/ipfs/bafybeihyexbw346g26bohwjeaa6g3y52v4bspkhplrzbwworjfxl7iadre" alt="BirdBurn Logo">
+    <h1>BirdBurn</h1>
+    <h2>Symbol: BIRD</h2>
+  </header>
+  <main>
+    <div class="card">
+      <p><strong>Description:</strong> Deflationary Token</p>
+      <p><strong>Total Supply:</strong> 1,000,000</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Auto-burn</li>
+        <li>Transferable</li>
+        <li>Based on TON</li>
+      </ul>
+      <p><strong>Explorer:</strong><br>
+        <a href="https://tonviewer.com/EQAdsSEmPopDiLMAizpY9BJm3aPvP_KB9nb3YWomaJXutZn9" target="_blank">
+          View Jetton Master on TON Explorer
+        </a>
+      </p>
     </div>
-
-    <a class="button" href="https://tonviewer.com/EQD55i6gJhCoVEWGeN0x_xB-0cW7zxMsRqItYBTBhlTY1djj" target="_blank">View on TON Viewer</a>
-    <br/>
-    <a href="https://stone.fi" target="_blank">Buy on Stone.fi (if available)</a>
-  </div>
+  </main>
+  <footer>
+    &copy; 2025 BirdBurn Token. All rights reserved.
+  </footer>
 </body>
 </html>
